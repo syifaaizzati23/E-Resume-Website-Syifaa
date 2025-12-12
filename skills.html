@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+
+    <title>Skills</title>
+    <style>
+        body { font-family: Arial; margin:0; background:beige; }
+        header { background:#A3C49F; color:#426644; padding:25px; text-align:center; }
+        nav a { margin: 0 15px; text-decoration:none; color:#426644; font-weight:bold; }
+        nav a:hover { color:#FF6B87; }
+        .content { padding:30px; }
+        footer { background:#A3C49F; color:#426644; padding:10px; text-align:center; }
+        img { border-radius:10px; }
+   
+    
+        header {
+            background-color:#A3C49F;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color:#426644 ;
+            font-size: 14px;
+        }
+        nav a:hover {
+            color:#FF6B87 ;
+        }
+        nav a.active {
+            color:#FF6B87 ;
+            font-weight: bold;
+        }
+       
+        .icons {
+            display: none; 
+        }
+        
+                .skills-container { 
+            max-width: 700px;
+            margin: 40px auto 20px auto; 
+            padding: 20px;
+        }
+        .skills-container h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+        }
+        
+                .skill-card {
+            background-color: #fff;
+            padding: 25px;
+            margin-bottom: 20px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            border-left: 5px solid #A3C49F ;
+        }
+
+        .skill-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+        
+        .skill-category-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            color:#A3C49F ;
+        }
+
+        .skill-level {
+            font-weight: bold;
+            color: #28a745; 
+            background-color: #e6ffe6;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 0.9em;
+        }
+
+        .tools-list {
+            margin: 10px 0 0 0;
+            padding-left: 20px; 
+            list-style: disc; 
+            line-height: 1.8;
+            color: #555;
+        }
+        
+               .audio-container {
+            max-width: 700px; 
+            margin: 20px auto 40px auto; 
+            padding: 15px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .audio-container p {
+            font-size: 1.1em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .audio-container audio {
+            width: 80%; 
+            min-width: 250px;
+            max-width: 450px;
+            display: block;
+            margin: 0 auto;
+        }
+
+
+                footer {
+            margin-top: 40px;
+            padding: 15px 20px; 
+            background-color:#A3C49F ;
+            border-top: 1px solid #ccc;
+            text-align: center; 
+            font-size: 0.9em;
+            color: #555;
+       
+               }
+        
+               @media (max-width: 768px) {
+                       header {
+                flex-direction: column;
+                align-items: center;
+                padding-bottom: 10px;
+            }
+
+            .logo {
+                margin-bottom: 15px;
+                margin-right: 0; /* Remove right margin when stacked */
+            }
+            
+            nav {
+                width: 100%;
+                text-align: center; 
+                padding-top: 5px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                max-width: 100%;
+            }
+
+            nav a {
+                 margin: 5px 5px;
+                 flex: 0 1 auto;
+                 text-align: center;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .footer-info p {
+                display: block; 
+                line-height: 1.4;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<header>
+        <h1>SYIFAA IZZATI</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="education.html">Education</a>
+        <a href="skills.html">Skills</a>
+        <a href="achievement.html">Achievement</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+ </header>
+
+     <div class="skills-container">
+        <h2 style="color:#FF6B87;">Technical and Soft Skills</h2>       
+        <div class="skill-card">
+            <div class="skill-header">
+                <span class="skill-category-title">Programming & Markup</span>
+                <span class="skill-level">Basic</span>
+            </div>
+            <ul class="tools-list">
+                <li>HTML, CSS (Structuring and styling web content)</li>
+                <li>Basic JavaScript (Adding interactivity)</li>
+                <li>Bootstrap Framework (Responsive design and rapid development)</li>
+            </ul>
+        </div>
+
+        <div class="skill-card">
+            <div class="skill-header">
+                <span class="skill-category-title">Library Management Systems</span>
+                <span class="skill-level">Learning/Basic</span>
+            </div>
+            <ul class="tools-list">
+                <li>KOHA (Basic circulation and cataloging operations)</li>
+                <li>MARC21 (Cataloging standard structure)</li>
+            </ul>
+        </div>
+
+        <div class="skill-card">
+            <div class="skill-header">
+                <span class="skill-category-title">Productivity & Design</span>
+                <span class="skill-level">Intermediate</span>
+            </div>
+            <ul class="tools-list">
+                <li>Microsoft Office Suite (Word, Excel, PowerPoint)</li>
+                <li>Canva (Graphic Design for presentations and media)</li>
+            </ul>
+        </div>
+
+        <div class="skill-card">
+            <div class="skill-header">
+                <span class="skill-category-title">Soft Skills</span>
+                <span class="skill-level">Excellent</span>
+            </div>
+            <ul class="tools-list">
+                <li>Time Management & Organization</li>
+                <li>Teamwork & Collaboration</li>
+                <li>Problem-Solving & Critical Thinking</li>
+                <li>Communication (Fluent in Bahasa Melayu and English)</li>
+            </ul>
+        </div>
+        
+    </div>
+
+    <div class="audio-container">
+        <p>🔊 This is me speaking in English!</p>
+        <audio controls>
+            <source src="myaudio.mp3" type="audio/mp3"> 
+        </audio>
+    </div>
+
+    </body>
+</html>
+    </style>
+
+</div>
+
+<footer>
+
+        <div class="footer-info">
+            <p>
+                 Recommended: Latest Chrome, Firefox, or Edge |
+                 Resolution: 1280x720 or higher
+           
+        </div>
+        <center>
+            <p>© 2025 SYIFAA IZZATI | Best viewed in Chrome | Last updated December 2025
+</p>
+        </center>
+    
+
+
+   </footer>
+
+</body>
+</html>

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Me</title>
+     <style>
+        body { font-family: Arial; margin:0; background:beige; }
+        header { background:#A3C49F; color:#426644; padding:25px; text-align:center; }
+        nav a { margin: 0 15px; text-decoration:none; color:#426644; font-weight:bold; }
+        nav a:hover { color:#FF6B87; }
+        .content { padding:30px; }
+        footer { background:#A3C49F; color:#426644; padding:10px; text-align:center; }
+        img { border-radius:10px; }
+
+    
+    
+      header {
+            background-color:#A3C49F;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .logo {
+            font-weight: bold;
+            font-size: 24px;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color:#426644 ;
+            font-size: 14px;
+        }
+        nav a:hover {
+            color:#FF6B87 ;
+        }
+        nav a.active {
+            color:#FF6B87 ;
+            font-weight: bold;
+        }
+  
+
+
+           .main-content-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 20px;
+            gap: 20px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .profile-container {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .resume-image-space {
+            flex: 1;
+            min-width: 300px;
+            background-color:#A3C49F ;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border: 2px dashed #ccc;
+            text-align: center;
+            min-height: 700px; 
+            display: flex; 
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        
+        .resume-image-space img {
+            width: 100%;
+            height: auto;
+            max-width: 100%;
+            display: block;
+            border-radius: 8px;
+            cursor: zoom-in;
+        }
+        
+        
+        .profile-table {
+            width: 100%;
+            border-collapse: collapse;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            background-color: #fff;
+        }
+        .profile-table th, .profile-table td {
+            border: 1px solid #e0e0e0;
+            padding: 15px;
+            text-align: left;
+        }
+        .profile-table th {
+            background-color: #87ceeb;
+            color: #333;
+            text-align: center;
+        }
+        
+        
+        .profile-photo-cell {
+            width: 35%;
+            max-width: 150px;
+            padding: 0;
+            border: none;
+        }
+        .profile-photo-cell img {
+            width: 100%;
+            height: auto;
+            display: block;
+            /* Applying border radius only to the bottom-left corner now */
+            border-bottom-left-radius: 10px;
+            cursor: zoom-in;
+        }
+        .experience-content-cell {
+            width: 65%;
+            padding-left: 15px;
+            vertical-align: top;
+           
+            border-top-right-radius: 10px; 
+            border-bottom-right-radius: 10px;
+        }
+        
+        .profile-list ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            margin: 0;
+        }
+        .profile-list li {
+            padding: 5px 0;
+        }
+
+        
+        .video-cell {
+            padding: 15px;
+            text-align: center;
+        }
+        .video-cell video {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+                    
+      
+                @media (max-width: 768px) {
+            .main-content-wrapper {
+                flex-direction: column;
+                align-items: stretch;
+            }
+                   
+
+      footer {
+    background:#A3C49F;
+    color:#426644;
+    padding:15px;
+    text-align:center;
+    width: 100%;
+    bottom: 0;
+}                             
+    </style>
+</head>
+
+
+<body>
+
+<header>
+    <h1>SYIFAA IZZATI</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="education.html">Education</a>
+        <a href="skills.html">Skills</a>
+        <a href="achievement.html">Achievement</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+<div class="dropdown">
+    <button class="dropbtn">Library Student</button>
+    <div class="dropdown-content">
+        <a href="volunteer.html" target="bottom">Volunteering</a>
+                
+    </div>
+</div>
+
+<div class="dropdown">
+           <button class="dropbtn">Hobby</button>
+           <div class="dropdown-content">
+               <a href="acting.html" target="bottom">Acting</a>
+              
+               
+           </div>
+       </div>
+
+<div class="dropdown">
+           <button class="dropbtn">Travelling</button>
+           <div class="dropdown-content">
+                   <a href="indonesia.html" target="xyz">Indonesia</a>
+</div>
+       </div>
+
+       <head>
+           <meta name="viewport" content="width=device-width, initial-scale=1">
+           <style>
+               .dropbtn {
+                   background-color:#426644 ;
+                   color: white;
+                   padding: 16px;
+                   font-size: 16px;
+                   border: none;
+               }
+
+               .dropdown {
+                   position: relative;
+                   display: inline-block;
+               }
+
+               .dropdown-content {
+                   display: none;
+                   position: absolute;
+                   background-color: #f1f1f1;
+                   min-width: 160px;
+                   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                   z-index: 1;
+               }
+
+                   .dropdown-content a {
+                       color: black;
+                       padding: 12px 16px;
+                       text-decoration: none;
+                       display: block;
+                   }
+
+                       .dropdown-content a:hover {
+                           background-color: #E1ACAC;
+                       }
+
+               .dropdown:hover .dropdown-content {
+                   display: block;
+               }
+
+               .dropdown:hover .dropbtn {
+                   background-color: #FF9EAA;
+               }
+           </style>  
+
+
+<div class="content">
+    <h2 style="color:#FF6B87;">Who Am I?</h2>
+    <p>I am a Bachelor of Information Science (Honours) Library Management student with a deep love for digital design, creativity, and personal growth. I have a curious spirit that drives me to explore new ideas and experiences beyond my field. Along the way, I have encountered many interesting moments that have shaped who I am today. This passion for learning continues to inspire me to grow, not just professionally, but in every aspect of life </p>
+
+<center><img src="photoa.png" alt="Syifaa" width="400" height="700">
+<img src="photob.png" alt="true" width="400" height="700">
+<img src="photoc.png" alt="beauty" width="400" height="700"></center>
+
+ 
+
+    <div class="main-content-wrapper">
+        
+        <div class="profile-container">
+            <table class="profile-table">
+                
+                <tr>
+                    <th colspan="2" style="background-color:#A3C49F ; text-align: center;">My Experience</th>
+                </tr>
+                
+                
+                    <td class="experience-content-cell" style="vertical-align: top;">
+                        <ul style="list-style-type: disc; padding-left: 20px; margin-top: 0;">
+                            <li>Worked at a dental clinic in the Office Management department, handling admin tasks and multimedia responsibilities</li>
+                            <li>Participated in the Malaysia Annual Library Conference 2024 as a volunteer</li>
+                            <li>Served as the Chief Editor for an extended abstract book project during my previous semester.</li>
+                            <li>Actively involved in performing arts activities at my university.</li> 
+                            <li>Travelled to Indonesia including Surabaya, Malang, and Mount Bromo , to gain new experiences and learn about different cultures.</li>
+                        </ul>
+                    </td>
+                </tr>
+                                
+                
+                <tr>
+                    <th colspan="2" style="background-color:#A3C49F ; text-align: center;">About Me</th>
+                </tr>
+                <tr>
+                    <td colspan="2" class="video-cell">
+                        <p>Just Brief a Life Vlog in My Life:</p>
+                        <video controls>
+                            <source src="videome.mp4" type="video/mp4">
+                        </video>
+    
+                </td>
+                </tr>
+ 
+<th colspan="2" style="background-color:#A3C49F ; text-align: center;">My Email</th>
+                </tr>
+
+                    <td colspan="2">
+                        <p>Hey its me! Check Me Out on:</p>
+                        <ul>
+                            <li><a href="mailto:syfaizzati05@gmail.com"subject=Hello=I am contacting you about...">
+    Contact Me
+</a>                                               </ul>
+                    </td>
+                </tr>
+
+                </table>
+        </div>
+
+        <div class="resume-image-space">
+            <h2><p>MY RESUME</p></h2>
+             <a href="#" data-toggle="modal" data-target="#imageModal" data-imgsrc="resume.png">
+                <img src="resume.png" alt="A4 Resume">
+            </a>
+        </div>
+   </div>
+
+<footer style="margin-top:40px;">
+    <div class="footer-info">
+        <p>Recommended: Latest Chrome, Firefox, or Edge | Resolution: 1280x720 or higher</p>
+        <p>© 2025 SYIFAA IZZATI | Best viewed in Chrome | Last updated December 2025</p>
+    </div>
+</footer>
+ 
+</p>
+        </center>
+
+    </body>
+</html>

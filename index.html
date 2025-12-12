@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+
+    <title>HOME - My E RESUME</title>
+   <title>About Me</title>
+     <style>
+        body { font-family: Arial; margin:0; background:beige; }
+        header { background:#A3C49F; color:#426644; padding:25px; text-align:center; }
+        nav a { margin: 0 15px; text-decoration:none; color:#426644; font-weight:bold; }
+        nav a:hover { color:#FF6B87; }
+        .content { padding:30px; }
+        footer { background:#A3C49F; color:#426644; padding:10px; text-align:center; }
+        img { border-radius:10px; }
+   
+    
+        header {
+            background-color:#A3C49F;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .logo {
+            font-weight: bold;
+            font-size: 24px;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color:#426644 ;
+            font-size: 14px;
+        }
+        nav a:hover {
+            color:#FF6B87 ;
+        }
+        nav a.active {
+            color:#FF6B87 ;
+            font-weight: bold;
+        }
+
+
+
+.digital_clock {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 2em;
+            color:#FF6B87 ;
+        }
+
+        .time {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        .date {
+            font-size: 0.5em;
+            color: #666;
+        }
+
+
+ @media (max-width: 768px) {
+            header {
+                
+                flex-direction: column;
+                align-items: center;
+                padding-bottom: 10px;
+            }
+
+            .logo {
+                margin-bottom: 15px;
+                 margin-right: 0; 
+            }
+            
+            nav {
+                width: 100%;
+                text-align: center; 
+                padding-top: 5px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                max-width: 100%; 
+            }
+
+            nav a {
+                 margin: 5px 5px; 
+                 flex: 0 1 auto; 
+                 text-align: center;
+            }
+        }
+        
+        @media (max-width: 500px) {
+            .footer-info p {
+               
+                display: block; 
+                line-height: 1.4;
+            }
+        
+    </style>
+
+</head>
+
+<body>
+
+<header>
+ 
+        <h1>SYIFAA IZZATI</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="education.html">Education</a>
+        <a href="skills.html">Skills</a>
+        <a href="achievement.html">Achievement</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+ </header>
+
+<div class="photo-wrapper">
+ <center><h2 style="color:#FF6B87;">Welcome to My E-Resume</h2>
+    <div class="photo-wrapper">
+    
+    <img src="logoim.png" alt="My Photo" width="220"style="border: 5px solid #A3C49F; border-radius: 10px;"><center/>
+ <p>Hello! Welcome to my e-resume interface.</p>  
+    Your visit is appreciated. This resume highlights my strengths, experiences, and dedication in a clear and polished way.</p>
+</div>
+</div>
+        
+
+
+<div class="digital_clock">
+        <div class="time">
+            <span class="hour">00</span>
+            <span class="dot">:</span>
+            <span class="minute">00</span>
+            <span class="dot">:</span>
+            <span class="second">00</span>
+            <span class="period">AM</span>
+        </div>
+
+        <div class="date">
+            <span class="day_name">Monday</span>,
+            <span class="month">January</span>
+            <span class="day_no">01</span>
+        </div>
+    </div>
+
+    <script>
+        function clock() {
+            var today = new Date();
+
+            var hour = today.getHours();
+            var minute = today.getMinutes();
+            var second = today.getSeconds();
+            let period = "AM";
+            var day_no = today.getDate();
+            var day_name = today.toLocaleDateString("default", {
+                weekday: "long"
+            });
+            var month = today.toLocaleDateString("default", {
+                month: "long"
+            });
+
+
+            if (hour < 10) {
+                hour = "0" + hour;
+            }
+            if (minute < 10) {
+                minute = "0" + minute;
+            }
+            if (second < 10) {
+                second = "0" + second;
+            }
+            if (hour > 12) {
+                hour = hour - 12;
+                period = "PM";
+            }
+            if (hour == 0) { // Handle midnight case (12 AM)
+                hour = 12;
+            }
+
+            document.querySelector('.hour').innerHTML = hour;
+            document.querySelector('.minute').innerHTML = minute;
+            document.querySelector('.second').innerHTML = second;
+            document.querySelector('.period').innerHTML = period;
+            document.querySelector('.day_name').innerHTML = day_name;
+            document.querySelector('.day_no').innerHTML = day_no;
+            document.querySelector('.month').innerHTML = month;
+
+            setTimeout(clock, 1000);
+        }
+
+        clock();
+    </script>
+
+    <footer>
+        <div class="footer-info">
+            <p>
+                 Recommended: Latest Chrome, Firefox, or Edge |
+                Resolution: 1280x720 or higher
+            </p>
+            <p> © 2025 SYIFAA IZZATI | Best viewed in Chrome | Last updated December 2025
+
+ </p>
+        </center>
+
+    </body>
+</html>
